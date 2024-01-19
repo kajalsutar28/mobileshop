@@ -1,0 +1,158 @@
+<html>
+<head>
+<title></title>
+<head>
+<style>
+
+*{
+margin:0;
+padding:0;
+font-family:sans-serif;
+box-sizing:border-box;
+}
+
+.navbar{
+ width:85%;
+ margin:auto;
+ padding:35px 0;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+}
+.logo{
+ width:10%;
+ height:7%;
+ cursor:pointer;
+}
+.navbar ul li{
+ list-style:none;
+ display:inline-block;
+ margin:0 20px;
+ position:relative;
+}
+.navbar ul li a{
+ text-decoration:none;
+ color:black;
+ text-transform:uppercase;
+}
+.navbar ul li::after{
+ content:'';
+ height:3px;
+ width:0;
+ background:#009688;
+ position:absolute;
+ left:0;
+ bottom:-10px;
+ transition:0.5s;
+}
+.navbar ul li:hover::after{
+ width:100%;
+}
+h1{
+ font-size:50px;
+ color:red;
+ margin-left:480px;
+}
+h2{
+ margin-left:520px;
+ color:darkturquoise;
+ font-size:30px;
+}
+.review{
+  margin-left:60px;
+  margin-right:60px;   
+
+}
+.form{
+  float:center;
+  width:375px;
+  height:420px;
+  margin-left:480px;
+}
+.form h3{
+  font-size:30px;
+ margin-left:100px;
+ color:blueviolet;
+}
+input[type=text]{
+  color:lightcyan;
+  width:80%;
+ padding:12px 30px;
+ margin-left:40px ;
+ display:inline-block;
+ border:1px solid gray;
+ border-radius:4px;
+ box-sizing:border-box;
+}
+input[type=submit]{
+  width:50%;
+ background-color:green;
+ color:white;
+ padding:14px 20px;
+ margin:8px 0;
+ border:none;
+ border-radius:4px;
+ cursor:pointer;
+}
+
+
+</style>
+</head>
+<body>
+<div class="banner">
+<div class="navbar">
+<img src="image/logo1.jpg" class="logo">
+
+<ul>
+  <li><a href="HOME.html">HOME</a></li>
+  <li><a href="ABOUT US.html">ABOUT US</a></li>
+  <li><a href="PRODUCT'S.html">PRODUCT'S</a></li>
+  <li><a href="CONTACT US.html">CONTACT US</a></li>
+  <li><a href="FEEDBACK.html">FEEDBACK</a></li>
+  <li><a href="LOGIN.html">LOGIN</a></li>
+</div>
+</div>
+<h1>SS Mobile Shop</h1>
+<br>
+<H2>Customer's Review</h2>
+<br>
+<br>
+<div class="review">
+<img src="image/review2.png" width="46%" height="40%"><p>
+ <div align="right"><img src="image/review4.png" width="46%" height="40%"></div><p>
+<img src="image/review5.png" width="46%" height="40%"><p>
+ <div align="right"><img src="image/review6.png" width="46%" height="40%"></div><p>
+<img src="image/review7.png" width="46%" height="40%"><p>  
+</div>
+<br>
+<br>
+<div class=form>
+<h3>Send us your feedback!</h3>
+<lable for="lname"><br>Name</lable><br>
+ <input type="text" id=name name="name"
+  placeholder="Your name..">
+<p>
+<lable for="lname"><br>E-mail</lable><br>
+  <input type="text" id=name name="Email"
+  placeholder="Enter your email..">
+<p>
+<lable for="lname"><br>Address</lable><br>
+  <input type="text" id=name name="Email"
+  placeholder="Enter your address">
+<p>
+
+  <lable for="lname"><br>Contact No.</lable><br>
+  <input type="text" id=name name="Email"
+  placeholder="Enter your number">
+<p>
+
+  <lable for="email"><br>Your Comments</lable><br>
+  <input type="text" id=name name="message"
+  placeholder="enter your message..">
+<p>
+<center><input type="submit" value="Submit"></center>
+
+</div>
+
+</body>
+</html>
